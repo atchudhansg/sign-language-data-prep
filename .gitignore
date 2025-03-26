@@ -2,3 +2,5 @@ ssh
 ssh.pub
 .ipynb_checkpoints/
 kaggle.json
+kaggle.json
+.DS_Store
