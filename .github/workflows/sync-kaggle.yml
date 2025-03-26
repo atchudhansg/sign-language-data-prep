@@ -30,7 +30,9 @@ jobs:
     - name: Download Kaggle notebook
       run: |
         mkdir -p notebooks/kaggle
-        kaggle kernels pull atchusg/machine-vision-gesture-detection -p notebooks/kaggle --force
+        rm -f notebooks/kaggle/machine-vision-gesture-detection.ipynb
+        kaggle kernels pull atchusg/machine-vision-gesture-detection -p notebooks/kaggle
+
 
     - name: Commit and push changes
       env:
